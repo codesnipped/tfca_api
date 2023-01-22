@@ -1,0 +1,37 @@
+{
+  "name": "tfca_main_server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+
+    "dev": "NODE_ENV=dev nodemon app.js",
+    "master": "pm2 start ecosystem.config.js --env master",
+    "slave": "pm2 start ecosystem.config.js --env slave",
+
+    "migrate-dev": "npx sequelize db:migrate --env=dev",
+    "migrate-master": "npx sequelize db:migrate --env=master",
+    "migrate-slave": "npx sequelize db:migrate --env=slave",
+
+    "seed-dev": "npx sequelize db:seed:all --env=dev",
+    "seed-master": "npx sequelize db:seed:all --env=master",
+    "seed-slave": "npx sequelize db:seed:all --env=slave"
+    
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "basic-ftp": "^5.0.2",
+    "bcrypt": "^5.1.0",
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "express-jwt": "^7.7.7",
+    "jsonwebtoken": "^8.5.1",
+    "multer": "^1.4.5-lts.1",
+    "mysql2": "^2.3.3",
+    "node-cron": "^3.0.2",
+    "sequelize": "^6.26.0",
+    "sequelize-cli": "^6.5.2",
+    "sqlite3": "^5.1.2"
+  }
+}
