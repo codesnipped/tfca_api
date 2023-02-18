@@ -15,7 +15,7 @@ module.exports = {
       },
       subject_id: {
         type: Sequelize.INTEGER,
-        allowNull: false,
+        allowNull: true,
         references: {
           model: 'Subjects',
           key: 'id'
@@ -25,7 +25,7 @@ module.exports = {
       },
       room_id: {
         type: Sequelize.INTEGER,
-        allowNull: false,
+        allowNull: true,
         references: {
           model: 'Rooms',
           key: 'id'
@@ -35,7 +35,7 @@ module.exports = {
       },
       major_id: {
         type: Sequelize.INTEGER,
-        allowNull: false,
+        allowNull: true,
         references: {
           model: 'Majors',
           key: 'id'
