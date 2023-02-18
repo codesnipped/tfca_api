@@ -9,9 +9,15 @@ module.exports = {
         primaryKey: true,
         type: Sequelize.INTEGER
       },
-      create_id:{
+      user_id: {
         type: Sequelize.INTEGER,
-        allowNull: false,
+        allowNull: true,
+        references: {
+          model: 'Users',
+          key: 'id'
+        },
+        onUpdate: 'CASCADE',
+        onDelete: 'SET NULL',
       },
       subject_id: {
         type: Sequelize.INTEGER,
@@ -54,7 +60,7 @@ module.exports = {
         defaultValue: false
       },
       date: {
-        type: Sequelize.DATE,
+        type: Sequelize.DATEONLY,
         allowNull: false
       },
       time_start: {

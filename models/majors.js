@@ -14,6 +14,7 @@ module.exports = (sequelize, DataTypes) => {
     }
   }
   Majors.init({
+    faculty_id: DataTypes.INTEGER, // ตารางคณะ
     name: DataTypes.STRING // ชื่อสาขา
   }, {
     sequelize,

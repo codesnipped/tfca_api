@@ -9,6 +9,10 @@ module.exports = {
         primaryKey: true,
         type: Sequelize.INTEGER
       },
+      hardware_mode: {
+        type: Sequelize.STRING,
+        allowNull: false
+      },
       tos_detail: {
         type: Sequelize.TEXT,
         allowNull: false
