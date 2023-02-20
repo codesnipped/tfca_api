@@ -4,15 +4,12 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "NODE_ENV=development nodemon app.js",
-    "prod": "pm2 start ecosystem.config.js --env production",
-    "rp": "pm2 start ecosystem.config.js --env rp",
+    "development": "NODE_ENV=development nodemon app.js",
+    "production": "pm2 start ecosystem.config.js --env production",
     "migrate-dev": "sequelize db:migrate --env development",
     "migrate-prod": "sequelize db:migrate --env production",
-    "migrate-rp": "sequelize db:migrate --env rp",
     "seed-dev": "sequelize db:seed:all --env development",
-    "seed-prod": "sequelize db:seed:all --env production",
-    "seed-rp": "sequelize db:seed:all --env rp"
+    "seed-prod": "sequelize db:seed:all --env production"
   },
   "author": "",
   "license": "ISC",
