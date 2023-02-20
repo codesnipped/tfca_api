@@ -35,7 +35,7 @@ var httpsServer = https.createServer(options, app);
 
 const PORT = process.env.PORT || 50000
 httpServer.listen(PORT, () => {
-    const env = `${process.env.NODE_ENV || 'production'}`
+    const env = `${process.env.NODE_ENV || 'prod'}`
     console.log(`App listening on port ${PORT}`)
     console.log(`App listening on env ${env}`)
     console.log(`Press Ctrl+C to quit.`)

@@ -4,13 +4,13 @@ module.exports = {
             name: "backend_api",
             script: "./app.js",
             watch: true,
-            development: {
+            dev: {
                 "PORT": 5000,
-                "NODE_ENV": "development"
+                "NODE_ENV": "dev"
             },
-            production: {
+            prod: {
                 "PORT": 5000,
-                "NODE_ENV": "production",
+                "NODE_ENV": "prod",
             },
         }
     ]
