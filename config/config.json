@@ -1,5 +1,5 @@
 {
-  "dev": {
+  "development": {
     "username": "root",
     "password": null,
     "database": "tfca",
@@ -7,15 +7,7 @@
     "dialect": "mysql",
     "define": { "charset": "utf8mb3", "dialectOptions": { "collate": "utf8mb4_general_ci" } }
   },
-  "master": {
-    "username": "idpadmin",
-    "password": "idp@Root123",
-    "database": "tfca",
-    "host": "127.0.0.1",
-    "dialect": "mysql",
-    "define": { "charset": "utf8mb3", "dialectOptions": { "collate": "utf8mb4_general_ci" } }
-  },
-  "slave": {
+  "production": {
     "username": "sau",
     "password": "sauP@ssw0rd",
     "database": "tfca",
