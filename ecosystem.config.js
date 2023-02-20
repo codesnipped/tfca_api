@@ -11,20 +11,11 @@ module.exports = {
             prod: {
                 "PORT": 5000,
                 "NODE_ENV": "production",
-            }
+            },
+            rp: {
+                "PORT": 5000,
+                "NODE_ENV": "rp",
+            },
         }
     ]
-}
-
-module.exports = {
-    apps: [{
-        name: "backend_api",
-        script: "./app.js",
-        env_production: {
-            NODE_ENV: "production"
-        },
-        env_development: {
-            NODE_ENV: "development"
-        }
-    }]
 }
