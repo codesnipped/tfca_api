@@ -19,7 +19,7 @@ let currentDate = new Date();
 let h = ("0" + (currentDate.getHours() + 1)).slice(-2);
 let m = ("0" + (currentDate.getMinutes() + 1)).slice(-2);
 let s = ("0" + (currentDate.getSeconds() + 1)).slice(-2);
-let timeStamp = h + '-' + m + '-' + s;
+let timeStamp = h + ':' + m + ':' + s;
 
 let dd = ("0" + (currentDate.getDate() + 1)).slice(-2)
 let mm = ("0" + (currentDate.getMonth() + 1)).slice(-2)

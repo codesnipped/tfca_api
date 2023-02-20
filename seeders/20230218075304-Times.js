@@ -19,7 +19,7 @@ let currentDate = new Date();
 let h = currentDate.getHours();
 let m = currentDate.getMinutes();
 let s = currentDate.getSeconds();
-let timeStamp = h + ' ' + m + ' ' + s;
+let timeStamp = h + ':' + m + ':' + s;
 
 const data = [
   {
