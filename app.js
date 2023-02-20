@@ -33,9 +33,9 @@ app.use('/api', token, require('./controller/profiles.controller'))
 var httpServer = http.createServer(app);
 var httpsServer = https.createServer(options, app);
 
-const PORT = process.env.PORT || 30000
+const PORT = process.env.PORT || 5000
 httpServer.listen(PORT, () => {
-    const env = `${process.env.NODE_ENV || 'dev'}`
+    const env = `${process.env.NODE_ENV || 'slave'}`
     console.log(`App listening on port ${PORT}`)
     console.log(`App listening on env ${env}`)
     console.log(`Press Ctrl+C to quit.`)

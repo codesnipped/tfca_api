@@ -5,11 +5,11 @@ module.exports = {
             script: "./app.js",
             watch: true,
             master: {
-                "PORT": 50000,
+                "PORT": 5000,
                 "NODE_ENV": "master"
             },
             slave: {
-                "PORT": 50000,
+                "PORT": 5000,
                 "NODE_ENV": "slave",
             }
         }
