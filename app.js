@@ -33,7 +33,7 @@ app.use('/api', token, require('./controller/profiles.controller'))
 var httpServer = http.createServer(app);
 var httpsServer = https.createServer(options, app);
 
-const PORT = process.env.PORT || 50000
+const PORT = process.env.PORT || 5000
 httpServer.listen(PORT, () => {
     const env = `${process.env.NODE_ENV || 'prod'}`
     console.log(`App listening on port ${PORT}`)
